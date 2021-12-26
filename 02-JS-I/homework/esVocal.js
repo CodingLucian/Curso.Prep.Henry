@@ -1,5 +1,5 @@
 function esVocal(letra){
- if (letra.lenght=1) {
+ if (letra.lengt=1) {
       var vocales="aeiou";
   for (const l of vocales) {
   if (l===letra) {
@@ -9,3 +9,4 @@ function esVocal(letra){
   return false;
   };
   };
+  console.log(esVocal("y"));

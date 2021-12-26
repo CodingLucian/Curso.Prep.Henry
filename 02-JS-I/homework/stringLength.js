@@ -1,7 +1,8 @@
 function tienenMismaLongitud(str1, str2) {
-  if (str1.lenght===str2.lenght){
-    return "true";
+  console.log(str1.length)
+  if (str1.length=str2.length){
+    return "true"
   }
-  return "false";
-};
-console.log(tienenMismaLongitud("caca","pipi"));
+  return "false"
+}
+console.log(tienenMismaLongitud("ccaj","pipi"))
