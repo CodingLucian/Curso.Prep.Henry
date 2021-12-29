@@ -1,27 +1,19 @@
-var numeros = [4,2,5,7,9,77,6]
-var M = 0
-function mayor(array){
-  
-  for (const i of array) {
-    if(i>M){
-      M=i
-    }
-  }
-  return M
+function orderArray(unordered){
+    var orderedArray = []
+    var n = unordered[0]
+    var lastN = 0
+    for (let i = 0; i < unordered.length; i++) {
+        for (const element of unordered) {
+            if (element<n&&element>lastN) {
+                n = element
+            }
+        }
+        orderedArray.push(n)
+        lastN = n
+        i++
+        n = unorderedArray[i]
+        }
+    return orderedArray
 }
-console.log(mayor(numeros))
-
-function mayorX(array,X){
-  let w = 0
-  for (const i of array) {
-    if(i>w&&i<X){
-      w = i
-    }
-  }
-  M = w
-  return w
-}
-for (const iterator of numeros) {
-  
-console.log(mayorX(numeros,M))
-}
+var unorderedArray = [9,6,3,1,8,10,14,77,20]
+console.log(orderArray(unorderedArray))
