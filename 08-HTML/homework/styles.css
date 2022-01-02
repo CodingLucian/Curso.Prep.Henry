@@ -1,16 +1,36 @@
+body {
+    background-image: url("https://wallpaper.dog/large/5549638.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+a {
+    color: fuchsia;
+}
 h1 {
     color: cornflowerblue;
 }
+
 img {
-    width: 400px;
+    width:50%; 
+    max-width: 600px;
+    
 }
+
 #thirdDiv {
-    height: 600px; 
-    width: 500px; 
-    background-color: red; 
-    padding: 50px; 
-    border: 2px chartreuse;
+    
+    background-color: rgb(152, 218, 235);
+    width: 100%
+    padding: 100px; 
+    border: solid black 10px;
 } 
+
 #spanId {
     font-size: 18px; margin: 50px;
 }        
