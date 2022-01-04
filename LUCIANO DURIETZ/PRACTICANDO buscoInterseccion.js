@@ -19,6 +19,6 @@ function buscoInterseccion(arreglo1, arreglo2){
   }
   return resultado;
 }
-var arr1 =[6,7,8,3];
-var arr2 =[1,3,4,3,5];
+var arr1 =[1, 2, 3];
+var arr2 =[1, 5, 8, 3];
 console.log(buscoInterseccion(arr1, arr2))
