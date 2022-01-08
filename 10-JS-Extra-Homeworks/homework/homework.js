@@ -10,10 +10,12 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
- 
-   var resultado = Object.entries(objeto);
-   return resultado; 
-}
+  var resultado = [];
+  for (const key in objeto) {
+     resultado.push([key, objeto[key]])
+    }
+  return resultado
+ }
 
 
 function numberOfCharacters(string) {
@@ -22,12 +24,12 @@ function numberOfCharacters(string) {
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
   var obj = {};
-  for (const leter of string) {
-    if (obj.hasOwnProperty(leter)) {
-      obj[leter] = obj[leter] + 1
-    }else {  
-      obj[leter] = 1
-     }
+  for (const letra of string) {
+    if (obj[letra]) {
+      obj[letra]++
+    }else {
+      obj[letra] = 1
+    }
   }
   return obj;
 }
@@ -105,7 +107,6 @@ function deleteAbc(cadena){
   for (const letra of cadena) {
     if (letra != "a" && letra != "b" && letra != "c") {
       str = str + letra;  
-      console.log(str);   
     }
   }return str;
 }
@@ -148,7 +149,7 @@ function buscoInterseccion(arreglo1, arreglo2){
       }  
     }
   }
-  return resultado;
+  return resultado; 
 }
 
 
